@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+  body
+    div.border
+      nav.navbar.navbar-dark.bg-dark
+        a.navbar-brand(href='#') 
+          img.d-inline-block.align-top(src='/images/icon.svg', width='30', height='30') 
+        |  Cydelivery
+      div.customPadding 
+         block content
+      div.navbar.footer.align-middle 
+            .center I'm AweSome !
