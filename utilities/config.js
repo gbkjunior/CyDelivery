@@ -3,10 +3,10 @@
 module.exports = {
 
 	mysqlParams 		: {
-										  host								: "unlistrds.ch8oee9sn1gn.us-east-2.rds.amazonaws.com",
-											database						: "listdb",
-											user      					: "vijayrds",
-										  password  					: "mysqlmaster",
+										  host								: "cydel-instance.ch8oee9sn1gn.us-east-2.rds.amazonaws.com",
+											database						: "cydel-db",
+											user      					: "cydel",
+										  password  					: "mysqlcydel",
 										  port  							: "3306",
 											data_source_provider: "rds",
 											type								: "mysql",
