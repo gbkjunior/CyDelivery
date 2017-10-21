@@ -1,0 +1,24 @@
+{
+  "name": "cydel",
+  "version": "1.0.0",
+  "description": "Application that aids in the easier delivery of goods from various vendors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbkjunior/CyDelivery.git"
+  },
+  "keywords": [
+    "npm",
+    "express",
+    "nodejs"
+  ],
+  "author": "vijayadeepak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbkjunior/CyDelivery/issues"
+  },
+  "homepage": "https://github.com/gbkjunior/CyDelivery#readme"
+}
