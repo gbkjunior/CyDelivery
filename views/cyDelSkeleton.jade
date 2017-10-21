@@ -4,13 +4,30 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-  body
-    div.border
-      nav.navbar.navbar-dark.bg-dark
+  body(style="background-image: url('/images/biker.jpg');background-size: 100% 100%;background-repeat: no-repeat;overflow-y:hidden;")     
+      nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
         a.navbar-brand(href='#') 
-          img.d-inline-block.align-top(src='/images/icon.svg', width='30', height='30') 
-        |  Cydelivery
+          img.d-inline-block.align-top(src='/images/logo-small.png', width='30', height='30')  
+          | CyDelivery
+        .collapse.navbar-collapse
+          ul.navbar-nav.mr-auto    
+            li.nav-item
+                a.nav-link
+                    | Buyers
+            li.nav-item
+                a.nav-link
+                    | Sellers        
+
+      .container-fluid.homePageImage    
+        
+        .row
+            .col-md-8 
+                div.logoTextParent
+                    div.logoTextTitle CyDelivery
+                    div.logoContentText Get what you need at your doorstep
+                img.img-fluid.fitLogoInside(src="/images/logo-big.png")
+            .col-md-4.textAlignEnd 
+                div.whatWeDoTitle What we do ?
+                div.whatWeDoContent what is we do what is we do  what is we do  what is we do what is we do what is we do what is we do what is we do what is we do what is we do what is we do  
       div.customPadding 
          block content
-      div.navbar.footer.align-middle 
-            .center I'm AweSome !

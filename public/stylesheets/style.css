@@ -1,6 +1,11 @@
 body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #efefef !important;
+}
+
+.container {
+    color: white !important;
 }
 
 a {
@@ -10,10 +15,6 @@ a {
 html {
     position: relative;
     min-height: 100%;
-}
-
-body {
-    margin-bottom: 60px;
 }
 
 .footer {
@@ -30,6 +31,68 @@ body {
     float: none;
     margin: 0 auto
 }
+
 .red {
-	color: #FF0000;
+    color: #FF0000;
+}
+
+.marginRight {
+    padding: 10px;
+}
+
+.fullWidth {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.homePageImage {
+    margin-top: 20px;
+    min-height: 100%;
+}
+
+.textAlignEnd {
+    text-align: end;
+}
+
+.fitImage {
+    position: absolute;
+    overflow-x: hidden;
+}
+
+fixed-top-below {
+    top: 56px !important;
+    transform: translate(0%, 15%);
+}
+
+.fitLogoInside {
+    max-height: -webkit-fill-available;
+    transform: translate(-30%, 20%);
+}
+
+.logoTextParent {
+    position: absolute;
+    transform: translate(0%, 50%);
+    z-index: 2;
+    height: -webkit-fill-available;
+    font-size: 65px;
+}
+
+.logoContentText {
+    font-size: 30px;
+    margin-top: 10px;
+    max-width: 180px;
+}
+
+.whatWeDoTitle {
+    font-size: -webkit-xxx-large;
+    font-weight: 700;
+    max-width: 175px;
+    display: inline-block
+}
+
+.whatWeDoContent {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: x-large;
 }
