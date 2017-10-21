@@ -9,7 +9,10 @@ router.get('/', function (req, res, next) {
 });
 shopsRouter.get('/shops', function(req, res, next)
 {
-	shopsController.getAllShops(function(result)
+	var type = req.params.type;
+	shopsController.getAllShopsByType(
+		type,
+		function(result)
 	{
 		return res.json(result);
 	})

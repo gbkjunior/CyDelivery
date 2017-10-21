@@ -4,12 +4,14 @@ var mysql = require('mysql');
 
 var shopsController = {
 
-	getAllShops : function(callback) 
+	getAllShopsByType : function(type, callback) 
 	{
 		var dbConnection = dbConnectionCreator();
 		
-		var getAllShopsDataSqlString = "SELECT shopName FROM Shops ";
-		dbConnection.query(getAllShopsDataSqlString, function(error, results, fields)
+		var getAllShopsDataByTypeSqlString = "SELECT shopName FROM Shops WHERE type="+ "'" + type + "'";
+		console.log(type);
+		console.log(getAllShopsDataByTypeSqlString);
+		dbConnection.query(getAllShopsDataByTypeSqlString, function(error, results, fields)
 		{
 			if(error)
 			{
