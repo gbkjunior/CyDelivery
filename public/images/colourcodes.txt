@@ -1,0 +1,5 @@
+REd #e22e51
+Light red #f19aa9
+Grey  #434344
+Light grey  #434344
+White tint light grey  #efefef

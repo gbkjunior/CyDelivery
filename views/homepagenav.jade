@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    .topnav
+      .img(alt='appicon')
+      a(href='#groceries') Groceries
+      a(href='#pharmacy') Pharmacy
+      a(href='#food') Food
+      .search
+          input.searchTerm(type='text', placeholder='What are you looking for?')
+          button.searchButton(type='submit')
+            i.fa.fa-search

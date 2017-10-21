@@ -4,9 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var apiString = 'api/v1';
 var index = require('./routes/index');
 var users = require('./routes/users');
+var customer = require('./routes/customerRoutes');
 var homepage = require('./routes/CyDelHome');
 
 var app = express();
@@ -30,6 +31,8 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/home', homepage);
 app.use('/shops', users);
+
+app.use(apiString+'/cust', customer);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

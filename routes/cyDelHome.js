@@ -8,4 +8,8 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/dashboard', function(req,res,next)
+{
+	res.render('homepagenav');
+});
 module.exports = router;
